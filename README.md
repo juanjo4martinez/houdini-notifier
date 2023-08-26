@@ -1,5 +1,5 @@
 # houdini-notifier
-HDA to get notified when a process in done.
+HDA to get notified when a process in done. This is currently a WIP, so more functionality is to be expected in the future.
 
 - Download the `.hda` file and put it in your `otls` directory (on Windows, that's usually `\Documents\houdinixx.x\otls`).
 - Launch Houdini and the HDA should appear in the TAB Menu under the name `Send Email` (only in the SOP context).
