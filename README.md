@@ -14,3 +14,19 @@ The JSON credentials file should follow this template:
   "password": "1234"
 }
 ```
+
+### Tracking jobs in Discord
+Here are the steps to make it work:
+- Create your own bot following [these steps](https://discordpy.readthedocs.io/en/stable/discord.html), or have access to an already existing one.
+- Invite the bot to your server.
+- Edit the `houdini.env` file and add your bot's token under a `DISCORD_TOKEN` variable, and your user ID under a `DISCORD_USER_ID` variable.
+  
+  For example:
+  - DISCORD_TOKEN = "Bot 1234567890thisismytoken"
+  - DISCORD_USER_ID = "718419653205950520"
+
+- Restart Houdini, load your scene and find the `Scripts` tab of an output node in Houdini.
+- Set the Pre-Render, Post-Frame and Post-Render scripts (you'll find them here in the `/scripts` folder).
+- Execute the node and you should receive a direct message from the bot with info about the job.
+
+This has only been tested with `File Cache` nodes. More info coming in next releases.
